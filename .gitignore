@@ -1,0 +1,10 @@
+
+# Build system
+node_modules/*
+public/
+dist/
+
+# IDE specific
+.idea
+.idea/*
+package-lock.json

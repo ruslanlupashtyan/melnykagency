@@ -1,0 +1,12 @@
+body {
+  background-color: #fdf2ea;
+  &.hidden {
+    overflow: hidden;
+  }
+}
+.plug {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}

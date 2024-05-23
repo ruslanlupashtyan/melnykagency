@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "AgoraSans";
+  color: $black-color;
+}
+
+h1,
+h2,
+h3 {
+  // font-family: "Cormorant";
+}
+
+h4,
+h5,
+h6 {
+  // font-family: "Pulse";
+}
+
+// h1 {
+//   @include font(64, 76, 700);
+//   @include min-width(b-lg) {
+//     @include font(32, 40, 700);
+//   }
+// }
+
+// h2 {
+//   text-align: center;
+//   @include font(64, 76, 700);
+//   @include max-width(b-md) {
+//     @include font(32, 38, 700);
+//   }
+// }
+
+// h3 {
+//   @include media-breakpoint-down(md) {
+//   }
+// }
+
+// h4 {
+//   text-align: center;
+//   @include max-width(b-md) {
+//     @include font(20, 24, 500);
+//   }
+// }
+
+// h5 {
+//   @include font(20, 24, 500);
+// }
+
+// h6 {
+//   @include media-breakpoint-down(lg) {
+//   }
+// }
+
+// p {
+//   @include font(16, 20, 400);
+//   @include max-width(b-md) {
+//     @include font(16, 20, 300);
+//   }
+// }
