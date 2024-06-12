@@ -1,24 +1,41 @@
 -
-    var nav = [
-        {
-            title: '',
-            link: ''
-        }
-    ]
+  var nav = [
+    {
+      title: 'Головна',
+      link: ''
+    },
+    {
+      title: 'Послуги',
+      link: ''
+    },
+    {
+      title: 'Команда',
+      link: ''
+    },
+    {
+      title: 'Відгуки',
+      link: ''
+    }
+  ]
 
 header.header
-    nav.header__wrapper
-        ul.header__menu.header-desk.flex
-            for link in nav 
-                li
-                    a(href=link.link)= link.title
-        .header__mobile.mobile
-            a#hamburger.hamburger
-                span.line
-                span.line
-                span.line
-.header__menu-mobile.header-mob
-    ul.header-mob__list.list
-        for link in nav 
-            li.list__item.item
-                a.item__link(class='header__menu--link' href=link.link)= link.title
+  .container.flex.ai-center.jc-between
+    .header__logo 
+      include ../../../images/logo.svg
+    ul.header__menu.nav.flex.jc-between
+      for link in nav 
+        li.nav__item
+          a(href=link.link)= link.title 
+    .header__buttons_primary.buttons.flex.ai-center
+      .buttons__btn.btn Безкоштовна консультація
+      .buttons__toggle
+        a(href="/")
+          span ua
+          span /
+          span eng
+
+    .header__mobile.mobile
+      a#hamburger.hamburger
+        span.line
+        span.line
+        span.line

@@ -1,12 +1,10 @@
 body {
-  background-color: #fdf2ea;
+  background-image: url("../images/background.webp");
+  font-family: "Mazzard";
+  font-size: 16px;
+
+  background-size: contain;
   &.hidden {
     overflow: hidden;
-  }
-}
-.plug {
-  position: relative;
-  img {
-    width: 100%;
   }
 }

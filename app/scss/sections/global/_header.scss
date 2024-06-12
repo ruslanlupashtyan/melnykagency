@@ -1,5 +1,45 @@
 .header {
+  padding: 14px 20px;
+  background-color: $white-color;
+  width: 100%;
+  &__mobile {
+    display: none;
+  }
 }
 
-.header-mob {
+.nav {
+  &__item {
+    margin-right: 64px;
+    &:last-child {
+      margin-right: unset;
+    }
+    &.active {
+      color: $orange-color;
+    }
+    @include max-width(b-md) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.header_btn {
+  width: 238px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.lang-switcher {
+  width: 55px;
+  margin-right: 26.23px;
+  margin-left: 16px;
+  margin-top: 30.5px;
+  margin-bottom: 30.5px;
+  font-size: 12px;
+}
+
+.lang-switcher__link {
+  color: #8d8d8d;
+  &.active {
+    color: #1c1c1c;
+  }
 }

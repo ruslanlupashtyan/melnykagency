@@ -1,7 +1,54 @@
-footer.footer.container
-  
+-
+  var social = [
+    {
+      title:'+38 (097) 619 91 92',
+      link:'#'
+    },
+    {
+      title:'INSTAGRAM',
+      link:'#'
+    },
+    {
+      title:'FACEBOOK', 
+      link:'#'},
+    {
+      title:'TELEGRAM', 
+      link:'#'},
+    {
+      title:'VIBER', 
+      link:'#'},
+    {
+      title:'WHATSAPP', 
+      link:'#'}
+    ]
+
+footer.footer
+  h2.footer__title Зв'язатись з нами
+  .footer__container.flex
+    form.form(method="post")
+      .form__data.flex
+        p.form__name
+          input(type="text",placeholder=" Ім'я:").name__input
+        p.form__phone
+          input(type="tel", placeholder="Номер телефону:").phone__input
+      .form__message        
+        //- label(for="message").message__label
+        textarea(name="").message__input
+        //- input(type="text", id="message", placeholder="Введіть Ваше повідомлення:").message__input
+      .form__submit-wrapper.flex
+        .form__btn.btn.flex
+          button(type="submit").btn__btn-submit Надіслати
+        .form__connect.flex
+          input(type="checkbox").connect__input
+          .connect__text Зв'язатись зі мною у Telegram
+    .contacts    
+      .contacts__adress  м. Чернівці, вул. Головна, 71
+      //- .contacts__phone +38 (097) 619 91 92
+      ul.contacts__social 
+        for link in social
+          li.social__item 
+            a(href=link.link).social__link= link.title
+
+
 script(src="js/main.min.js" defer)
-//- script(src="js/axios.js" defer, async)
-//- script.
-//-   (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-//-     ({key: "AIzaSyCY46nrv5pVNPlDX4B2RcVj3aGC1vpxCcg", v: "beta"});
+script(src="js/swiper.js" defer)

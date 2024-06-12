@@ -1,0 +1,76 @@
+.price {
+  padding: 15px;
+  &__container-wrapper {
+    width: 100%;
+    position: relative;
+    padding-top: 32px;
+    @include max-width(b-md) {
+      padding-top: 16px;
+    }
+  }
+  &__container {
+    height: 270px;
+    align-items: center;
+    background-color: $orange-color;
+    color: $white-color;
+    padding: 24px 30px;
+    border-radius: 16px 0 16px 0;
+    @include max-width(b-md) {
+      flex-direction: column;
+      height: fit-content;
+      padding: 22px 15px;
+    }
+  }
+  &__title {
+    width: 100%;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  &__column {
+    width: 40%;
+    @include max-width(b-md) {
+      width: 100%;
+    }
+  }
+  &__row {
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: NAMU;
+    line-height: 2.5;
+  }
+  &__img-container {
+    width: 218px;
+    @include max-width(b-md) {
+      display: none;
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 218px;
+    top: 0;
+    left: 40%;
+    object-fit: cover;
+    height: 302px;
+    @include max-width(b-md) {
+      display: none;
+    }
+  }
+}
+.price__column:nth-child(2) {
+  padding-right: 30px;
+  box-sizing: border-box;
+  @include max-width(b-md) {
+    padding-right: unset;
+  }
+}
+.price__column:last-child {
+  padding-left: 30px;
+  @include max-width(b-md) {
+    padding-left: unset;
+  }
+}
+
+.row__article {
+  align-self: flex-end;
+}

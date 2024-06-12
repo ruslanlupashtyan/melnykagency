@@ -1,0 +1,118 @@
+//- section.cases
+//-       h2.cases__title.flex Новини: наші кейси
+//-       .cases__container.flex
+//-         .cases__card
+//-           .card__img
+//-           .card__text-wrapper
+//-             .card__text Назва новини/кейсу 
+//-             .card__text з обмеженою довжиною 
+//-             .card__text і максимально 3 рядки
+//-             .card__text віаівавіаіва
+//-             .card__btn-wrapper
+//-               .card__btn.btn Детальніше
+//-         .cases__card
+//-           .card__img
+//-           .card__text-wrapper
+//-             .card__text Назва новини/кейсу 
+//-             .card__text з обмеженою довжиною 
+//-             .card__text і максимально 3 рядки
+//-             .card__text віаівавіаіва
+//-             .card__btn-wrapper
+//-               .card__btn.btn Детальніше
+//-         .cases__card
+//-           .card__img
+//-           .card__text-wrapper
+//-             .card__text Назва новини/кейсу 
+//-             .card__text з обмеженою довжиною 
+//-             .card__text і максимально 3 рядки
+//-             .card__text віаівавіаіва
+//-             .card__btn-wrapper
+//-               .card__btn.btn Детальніше
+//-         .cases__card
+//-           .card__img
+//-           .card__text-wrapper
+//-             .card__text Назва новини/кейсу 
+//-             .card__text з обмеженою довжиною 
+//-             .card__text і максимально 3 рядки
+//-             .card__text віаівавіаіва
+//-             .card__btn-wrapper
+//-               .card__btn.btn Детальніше
+//-         .cases__card
+//-           .card__img
+//-           .card__text-wrapper
+//-             .card__text Назва новини/кейсу 
+//-             .card__text з обмеженою довжиною 
+//-             .card__text і максимально 3 рядки
+//-             .card__text віаівавіаіва
+//-             .card__btn-wrapper
+//-               .card__btn.btn Детальніше
+
+
+-
+ var cases = [
+  {
+    title: 'кейс',
+    image: '/'
+  },
+  {
+    title: 'просто кейс',
+    image: '/'
+  },
+  {
+    title: 'не особо просто кейс',
+    image: '/'
+  },
+  {
+    title: 'кейс з довгою назвою',
+    image: '/'
+  },
+  {
+    title: 'кейс з ще довшою назвою',
+    image: '/'
+  },
+  {
+    title: 'кейс в якого назва довша аніж у попередніх',
+    image: '/'
+  },
+  {
+    title: 'кейс, якому я присвятив своє життя, 10 років як коту під хвіст, тепер розлучення і ділимо майно',
+    image: '/'
+  },
+  {
+    title: 'Даааааааа, єбать єго в рот, втянулі мєня в какуюта хуйню',
+    image: '/'
+  },
+  {
+    title: 'Я хз шо писати але для реальної картинки тут треба напиздячити багато тексту щоб можна було зрозуміти на скільки може вміститись цієї хуйні',
+    image: '/'
+  },
+  {
+    title: 'Ну вот ніби шось написав. Тут текст буде коротшим',
+    image: '/'
+  },
+  {
+    title: 'але всеодно він довше за мій секс',
+    image: '/'
+  },
+  {
+    title: 'всьо',
+    image: '/'
+  },
+  {
+    title: 'Я заєбався',
+    image: '/'
+  },
+ ]
+
+section.cases 
+  h2.cases__title новини: наші кейси
+  .swiper.cases__slider.slider
+    .swiper-wrapper.slider__wrapper
+      for item in cases
+        .swiper-slide.slide
+          .slide__image 
+            img(src="", alt="")
+          .slide__text 
+            p= item.title 
+            button.slide__button.btn Детальніше
+        

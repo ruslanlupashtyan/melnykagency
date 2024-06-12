@@ -1,0 +1,17 @@
+.options {
+  .row {
+    gap: 15px;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: unset;
+    }
+  }
+  .item {
+    background-color: $orange-color;
+    border-radius: 8px;
+    max-width: 480px;
+    &__text p {
+      color: $white-color;
+    }
+  }
+}

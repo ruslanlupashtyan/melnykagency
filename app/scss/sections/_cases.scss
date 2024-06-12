@@ -1,0 +1,95 @@
+// .cases {
+//     &__container {
+//       max-width: 100%;
+//       overflow-x: auto;
+//       padding-left: 15px;
+//       min-width: 100%;
+//       @include max-width(b-md) {
+//         padding-bottom: 16px;
+//       }
+//       &::-webkit-scrollbar {
+//         display: none;
+//       }
+//     }
+//     &__card {
+//       margin-right: 20px;
+//       &:last-child {
+//         margin-right: unset;
+//       }
+//     }
+//     &__title {
+//       color:$black-color;
+//       font-size: 64px;
+//       text-transform: uppercase;
+//       font-family: NAMU;
+//       justify-content: center;
+//       padding-bottom: 32px;
+//       @include max-width(b-md) {
+//         font-size: 24px;
+//       }
+//     }
+//   }
+
+//   .card {
+//     &__img {
+//       height: 250px;
+//       width: 397px;
+//       background-color: $orange-color;
+//       border-radius: 16px 0px 0px 0px;
+//       @include max-width(b-md) {
+//         height: 189px;
+//         width: 300px;
+//       }
+//     }
+//     &__text-wrapper {
+//       padding-left: 30px;
+//       padding-top: 15px;
+//       background-color: $white-color;
+//       border-radius: 0 0 16px 0;
+//       @include max-width(b-md) {
+//         padding-left: 25px;
+//         padding-top: 20px;
+//       }
+//     }
+//     &__text {
+//       font-family: NAMU;
+//       font-size: 20px;
+//       @include max-width(b-md) {
+//         font-size: 18px;
+//       }
+//     }
+//     &__btn-wrapper {
+//       padding-top: 12px;
+//       padding-bottom: 30px;
+
+//       @include max-width(b-md) {
+//         padding-bottom: 25px;
+//       }
+//     }
+//     &__btn.btn {
+//       width: 134px;
+//       text-align: center;
+//     }
+//   }
+
+.cases {
+  &__title {
+    margin-bottom: 32px;
+  }
+  .slide {
+    border-radius: 16px 0 16px 0;
+    overflow: hidden;
+    &__image {
+      background-color: $orange-color;
+      // NEED CLEAR IN RELISE
+      height: 250px;
+    }
+    &__text {
+      padding: 15px 30px 30px;
+      background-color: $white-color;
+      p {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

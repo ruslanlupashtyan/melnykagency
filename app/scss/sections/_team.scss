@@ -1,0 +1,53 @@
+.team {
+  padding: 15px;
+  &__title {
+    color: $black-color;
+    font-size: 64px;
+    text-transform: uppercase;
+    font-family: NAMU;
+    justify-content: center;
+    padding-bottom: 32px;
+    @include max-width(b-md) {
+      font-size: 24px;
+    }
+  }
+  &__container {
+    max-width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__card {
+    width: 100%;
+    margin-right: 16px;
+    &:last-child {
+      margin-right: unset;
+    }
+  }
+}
+
+.card {
+  &__img {
+    // background-image: url("./../assets/smart-object.png");
+    background-color: $orange-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+  }
+  &__text-wrapper {
+    padding-top: 8px;
+  }
+  &__text {
+    font-size: 16px;
+    font-family: NAMU;
+  }
+}
+
+.team__card:nth-child(even) .card__img {
+  border-radius: 0 16px 0 16px;
+}
+.team__card:nth-child(odd) .card__img {
+  border-radius: 16px 0 16px 0;
+}
