@@ -322,6 +322,15 @@
     span {
       color: $orange-color;
     }
+    @include max-width(b-xl) {
+      max-width: 700px;
+    }
+    @include max-width(b-lg) {
+      max-width: 450px;
+    }
+    // @include max-width(b-lg) {
+    //   max-width: 600px;
+    // }
   }
   &__counter {
     margin-bottom: 50px;
@@ -331,15 +340,25 @@
 .counter {
   &:first-child {
     margin-right: 60px;
+    @include max-width(b-lg) {
+      margin-right: 20px;
+    }
   }
   &__count p {
     color: $orange-color;
     @include font(60, 72, 700);
     margin-right: 10px;
+    @include max-width(b-lg) {
+      @include font(40, 48, 700);
+    }
   }
-  &__text p {
+  &__txt p {
     font-family: "Mazzard";
     @include font(20, 24, 400);
+    color: $black-color;
+    @include max-width(b-lg) {
+      @include font(16, 20, 400);
+    }
   }
 }
 
@@ -374,5 +393,8 @@
       transition: ease 250ms;
       transform: translateY(-30px);
     }
+  }
+  @include max-width(b-md) {
+    max-width: unset;
   }
 }

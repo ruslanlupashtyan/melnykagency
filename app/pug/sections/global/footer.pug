@@ -22,33 +22,57 @@
       link:'#'}
     ]
 
+//- footer.footer
+//-   h2.footer__title Зв'язатись з нами
+//-   .footer__container.flex
+//-     form.form(method="post")
+//-       .form__data.flex
+//-         p.form__name
+//-           input(type="text",placeholder=" Ім'я:").name__input
+//-         p.form__phone
+//-           input(type="tel", placeholder="Номер телефону:").phone__input
+//-       .form__message        
+//-         //- label(for="message").message__label
+//-         textarea(name="").message__input
+//-         //- input(type="text", id="message", placeholder="Введіть Ваше повідомлення:").message__input
+//-       .form__submit-wrapper.flex
+//-         .form__btn.btn.flex
+//-           button(type="submit").btn__btn-submit Надіслати
+//-         .form__connect.flex
+//-           input(type="checkbox").connect__input
+//-           .connect__text Зв'язатись зі мною у Telegram
+//-     .contacts    
+//-       .contacts__adress  м. Чернівці, вул. Головна, 71
+//-       //- .contacts__phone +38 (097) 619 91 92
+//-       ul.contacts__social 
+//-         for link in social
+//-           li.social__item 
+//-             a(href=link.link).social__link= link.title
+
 footer.footer
-  h2.footer__title Зв'язатись з нами
-  .footer__container.flex
-    form.form(method="post")
-      .form__data.flex
-        p.form__name
-          input(type="text",placeholder=" Ім'я:").name__input
-        p.form__phone
-          input(type="tel", placeholder="Номер телефону:").phone__input
-      .form__message        
-        //- label(for="message").message__label
-        textarea(name="").message__input
-        //- input(type="text", id="message", placeholder="Введіть Ваше повідомлення:").message__input
-      .form__submit-wrapper.flex
-        .form__btn.btn.flex
-          button(type="submit").btn__btn-submit Надіслати
-        .form__connect.flex
-          input(type="checkbox").connect__input
-          .connect__text Зв'язатись зі мною у Telegram
-    .contacts    
-      .contacts__adress  м. Чернівці, вул. Головна, 71
-      //- .contacts__phone +38 (097) 619 91 92
+  h2.footer__title.container звязатись з нами
+  .md-flex-up.footer-flex.container
+    form.footer__form.form(action="")
+      .md-flex-up.form__inputs
+        input(type="text", name="name" placeholder="ім'я")
+        input(type="tel", name="phone" placeholder="Номер телефону")
+      textarea(name="message" placeholder="Введіть Ваше повідомлення") 
+      .flex.md-flex-column-reverse-up.ai-center
+        button.footer-btn(type="submit") Надіслати
+        .flex.flex-reverse.jc-end 
+          label(for="tg-chckbx") Зв’язатись зі мною у Telegram
+          input(type="checkbox", name="" id="tg-chckbx")
+
+    .footer__contacts
+      .contacts__adress 
+        p м. Чернівці, 
+        p вул. Головна, 71
       ul.contacts__social 
         for link in social
           li.social__item 
             a(href=link.link).social__link= link.title
 
 
+
 script(src="js/main.min.js" defer)
-script(src="js/swiper.js" defer)
+//- script(src="js/swiper.js" defer)

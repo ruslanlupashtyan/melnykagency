@@ -26,14 +26,12 @@ header.header
       for link in nav 
         li.nav__item
           a(href=link.link)= link.title 
-    .header__buttons_primary.buttons.flex.ai-center
-      .buttons__btn.btn Безкоштовна консультація
-      .buttons__toggle
-        a(href="/")
-          span ua
-          span /
-          span eng
-
+    .flex.ai-center
+      .btn Безкоштовна консультація
+      .toggle
+        a.active(href="") ua
+        span /
+        a(href="") eng
     .header__mobile.mobile
       a#hamburger.hamburger
         span.line

@@ -468,7 +468,9 @@ $bps: (
 .jc-center {
   justify-content: center;
 }
-
+.jc-end {
+  justify-content: flex-end;
+}
 .jc-center-down {
   @include min-width(b) {
     justify-content: center;

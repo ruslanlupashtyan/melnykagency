@@ -47,6 +47,9 @@
     position: absolute;
     left: calc(50% - 189px);
     bottom: 0;
+    @include max-width(b-md) {
+      display: none;
+    }
     .gradient {
       position: absolute;
       z-index: 1;

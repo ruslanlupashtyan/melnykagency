@@ -1,14 +1,23 @@
+// FONT COLORS
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-a {
+h6 {
   color: $black-color;
+  &.white {
+    color: $white-color;
+  }
 }
 
+p,
+a {
+  color: $white-color;
+  @include font(16, 24, 400);
+}
+
+// FONT FAMILIES
 h1,
 h2,
 h3,
@@ -21,22 +30,35 @@ a {
   font-family: "NAMU";
 }
 
+// FONT SIZES
 h1,
 h2 {
   @include font(64, 76, 700);
   text-transform: uppercase;
+  @include max-width(b-xl) {
+    @include font(50, 58, 700);
+  }
+  @include max-width(b-lg) {
+    @include font(40, 42, 700);
+  }
+  @include max-width(b-md) {
+    @include font(32, 38, 700);
+  }
 }
+
 h1 {
   @include max-width(b-md) {
     @include font(32, 38, 700);
   }
 }
+
 h2 {
   text-align: center;
   @include max-width(b-md) {
     @include font(24, 28, 700);
   }
 }
+
 h3 {
   @include font(36, 42, 700);
   @include max-width(b-md) {

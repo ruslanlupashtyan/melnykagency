@@ -1,169 +1,248 @@
+// .footer {
+//   background-color: $orange-color;
+//   background-image: url("./../assets/smart-object.png");
+//   background-size: contain;
+//   border-radius: 24px 24px 0 0;
+//   padding-bottom: 40px;
+//   padding-top: 32px;
+//   padding-left: 15px;
+//   width: 100%;
+//   &__container {
+//     width: 100%;
+//     padding-right: 292px;
+//     @include max-width(b-md) {
+//       display: block;
+//       padding-right: 15px;
+//       padding-bottom: 33px;
+//     }
+//   }
+// }
+
+// .form {
+//   width: 100%;
+//   margin-right: 120px;
+//   @include max-width(b-lg) {
+//     margin-right: 40px;
+//     min-width: 100%;
+//   }
+//   &__data {
+//     max-width: 100%;
+//     @include max-width(b-md) {
+//       display: block;
+//     }
+//   }
+//   &__name {
+//     width: 50%;
+//     padding-right: 8px;
+//     @include max-width(b-md) {
+//       padding-right: 0px;
+//       min-width: 100%;
+//     }
+//   }
+//   &__phone {
+//     width: 50%;
+//     padding-left: 8px;
+//     @include max-width(b-md) {
+//       padding-left: 0px;
+//       min-width: 100%;
+//     }
+//   }
+//   &__message {
+//     width: 100%;
+//   }
+//   &__submit-wrapper {
+//     padding-top: 16px;
+//     @include max-width(b-md) {
+//       flex-direction: column-reverse;
+//       padding-top: 8px;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+//   &__connect {
+//     margin-left: 40px;
+//     align-items: center;
+//     @include max-width(b-md) {
+//       padding-bottom: 8px;
+//     }
+//   }
+//   &__btn.btn {
+//     background-color: $black-color;
+//     width: 300px;
+//     justify-content: center;
+//     @include max-width(b-md) {
+//       width: 345px;
+//     }
+//   }
+// }
+
+// .message__input {
+//   border: none;
+//   padding-top: 19px;
+//   padding-bottom: 156px;
+//   padding-left: 40px;
+// }
+
+// .name__input,
+// .message__input {
+//   width: 100%;
+//   border-radius: 20px 0px 20px 0px;
+// }
+
+// .phone__input {
+//   border-radius: 0% 20px 0px 20px;
+//   width: 100%;
+// }
+
+// .name__input,
+// .phone__input {
+//   margin-bottom: 15px;
+//   border-style: none;
+//   padding-top: 19px;
+//   padding-bottom: 19px;
+//   padding-left: 40px;
+//   @include max-width(b-md) {
+//     margin-bottom: 8px;
+//   }
+// }
+
+// .btn__btn-submit {
+//   color: $white-color;
+//   font-family: NAMU;
+//   font-size: 16px;
+// }
+
+// input::-webkit-input-placeholder {
+//   color: $black-color;
+//   font-family: NAMU;
+//   font-size: 16px;
+// }
+
+// input::-moz-placeholder {
+//   color: $black-color;
+// }
+// input:focus::placeholder {
+//   color: transparent;
+// }
+// input[type="checkbox"] {
+//   border-style: none;
+// }
+// .contacts {
+//   font-size: 24px;
+//   max-width: 100%;
+//   line-height: 29px;
+//   color: $white-color;
+//   white-space: nowrap;
+//   &__adress,
+//   &__phone {
+//     margin-bottom: 13px;
+//   }
+//   @include max-width(b-md) {
+//     padding-top: 24px;
+//   }
+// }
+
+// .social__item {
+//   margin-bottom: 13px;
+//   &:last-child {
+//     margin-bottom: unset;
+//   }
+// }
+
+// .social__link {
+//   color: $white-color;
+//   line-height: 29px;
+// }
+
+// .connect__text {
+//   display: flex;
+//   align-items: center;
+//   font-family: NAMU;
+//   color: $white-color;
+//   text-align: center;
+// }
+
+// .connect__input {
+//   width: 25px;
+//   height: 25px;
+//   border-style: none;
+// }
+
 .footer {
+  // background: $orange-color url("../../../images/smart-object.webp") center cover no-repeat;
   background-color: $orange-color;
-  background-image: url("./../assets/smart-object.png");
-  background-size: contain;
+  background-image: url("../../../images/smart-object.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 24px 24px 0 0;
-  padding-bottom: 40px;
-  padding-top: 32px;
-  padding-left: 15px;
-  width: 100%;
-  &__container {
-    width: 100%;
-    padding-right: 292px;
-    @include max-width(b-md) {
-      display: block;
-      padding-right: 15px;
-      padding-bottom: 33px;
-    }
+  padding: 32px 0 50px;
+  &-flex {
+    gap: 120px;
   }
-}
-
-.form {
-  width: 100%;
-  margin-right: 120px;
-  @include max-width(b-lg) {
+  &-btn {
     margin-right: 40px;
-    min-width: 100%;
+    padding: 20px 110px;
+    display: block;
+    background-color: $black-color;
+    color: $white-color;
+    border-radius: 20px 0 20px 0;
   }
-  &__data {
-    max-width: 100%;
-    @include max-width(b-md) {
-      display: block;
-    }
+  &__title {
+    text-align: left;
+    color: $white-color;
+    margin-bottom: 16px;
   }
-  &__name {
-    width: 50%;
-    padding-right: 8px;
-    @include max-width(b-md) {
-      padding-right: 0px;
-      min-width: 100%;
-    }
-  }
-  &__phone {
-    width: 50%;
-    padding-left: 8px;
-    @include max-width(b-md) {
-      padding-left: 0px;
-      min-width: 100%;
-    }
-  }
-  &__message {
+  &__form {
+    max-width: 780px;
     width: 100%;
   }
-  &__submit-wrapper {
-    padding-top: 16px;
-    @include max-width(b-md) {
-      flex-direction: column-reverse;
-      padding-top: 8px;
-      justify-content: center;
-      align-items: center;
+  &__contacts {
+    a,
+    p {
+      @include font(24, 28, 400);
+    }
+    p:last-child {
+      margin-bottom: 32px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    li:first-child {
+      margin-bottom: 32px;
     }
   }
-  &__connect {
-    margin-left: 40px;
-    align-items: center;
-    @include max-width(b-md) {
-      padding-bottom: 8px;
+  .form {
+    &__inputs {
+      gap: 16px;
+    }
+    input:not(#tg-chckbx),
+    textarea {
+      width: 100%;
+      margin-bottom: 16px;
+      border: none;
+      padding: 20px 40px;
+    }
+    input {
+      &:first-child:not(#tg-chckbx) {
+        border-radius: 20px 0 20px 0;
+      }
+      &:last-child:not(#tg-chckbx) {
+        border-radius: 0 20px 0 20px;
+      }
+    }
+    textarea {
+      height: 200px;
+      border-radius: 20px 0 20px 0;
+    }
+    #tg-chckbx {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    label {
+      @include font(16, 25, 400);
+      color: $white-color;
     }
   }
-  &__btn.btn {
-    background-color: $black-color;
-    width: 300px;
-    justify-content: center;
-    @include max-width(b-md) {
-      width: 345px;
-    }
-  }
-}
-
-.message__input {
-  border: none;
-  padding-top: 19px;
-  padding-bottom: 156px;
-  padding-left: 40px;
-}
-
-.name__input,
-.message__input {
-  width: 100%;
-  border-radius: 20px 0px 20px 0px;
-}
-
-.phone__input {
-  border-radius: 0% 20px 0px 20px;
-  width: 100%;
-}
-
-.name__input,
-.phone__input {
-  margin-bottom: 15px;
-  border-style: none;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 40px;
-  @include max-width(b-md) {
-    margin-bottom: 8px;
-  }
-}
-
-.btn__btn-submit {
-  color: $white-color;
-  font-family: NAMU;
-  font-size: 16px;
-}
-
-input::-webkit-input-placeholder {
-  color: $black-color;
-  font-family: NAMU;
-  font-size: 16px;
-}
-
-input::-moz-placeholder {
-  color: $black-color;
-}
-input:focus::placeholder {
-  color: transparent;
-}
-input[type="checkbox"] {
-  border-style: none;
-}
-.contacts {
-  font-size: 24px;
-  max-width: 100%;
-  line-height: 29px;
-  color: $white-color;
-  white-space: nowrap;
-  &__adress,
-  &__phone {
-    margin-bottom: 13px;
-  }
-  @include max-width(b-md) {
-    padding-top: 24px;
-  }
-}
-
-.social__item {
-  margin-bottom: 13px;
-  &:last-child {
-    margin-bottom: unset;
-  }
-}
-
-.social__link {
-  color: $white-color;
-  line-height: 29px;
-}
-
-.connect__text {
-  display: flex;
-  align-items: center;
-  font-family: NAMU;
-  color: $white-color;
-  text-align: center;
-}
-
-.connect__input {
-  width: 25px;
-  height: 25px;
-  border-style: none;
 }

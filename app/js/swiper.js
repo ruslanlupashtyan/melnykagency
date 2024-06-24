@@ -7511,15 +7511,48 @@ let casesSwiper = new Swiper(".cases .swiper", {
       slidesPerView: 2.4,
       spaceBetween: 12,
     },
-    // when window width is >= 480px
     992: {
       slidesPerView: 3.2,
-      // spaceBetween: 30,
     },
-    // when window width is >= 640px
     1200: {
       slidesPerView: 3.4,
-      // spaceBetween: 40,
+    },
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+let teamSwiper = new Swiper(".team .swiper", {
+  grabCursor: true,
+  slidesPerView: 3.7,
+  spaceBetween: 16,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.15,
+      spaceBetween: 12,
+    },
+    375: {
+      slidesPerView: 1.25,
+    },
+    576: {
+      slidesPerView: 1.5,
+      spaceBetween: 12,
+    },
+    620: {
+      slidesPerView: 1.8,
+      spaceBetween: 12,
+    },
+    750: {
+      slidesPerView: 2.4,
+      spaceBetween: 12,
+    },
+    992: {
+      slidesPerView: 3.2,
+    },
+    1200: {
+      slidesPerView: 3.4,
     },
   },
   scrollbar: {

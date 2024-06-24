@@ -52,9 +52,9 @@
           <li class="nav__item"><a href="">Команда</a></li>
           <li class="nav__item"><a href="">Відгуки</a></li>
         </ul>
-        <div class="header__buttons_primary buttons flex ai-center">
-          <div class="buttons__btn btn">Безкоштовна консультація</div>
-          <div class="buttons__toggle"><a href="/"><span>ua</span><span>/</span><span>eng</span></a></div>
+        <div class="flex ai-center">
+          <div class="btn">Безкоштовна консультація</div>
+          <div class="toggle"><a class="active" href="">ua</a><span>/</span><a href="">eng</a></div>
         </div>
         <div class="header__mobile mobile"><a class="hamburger" id="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></a></div>
       </div>
@@ -80,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="flex services">
+        <div class="md-flex-up services">
           <div class="service">
             <div class="service__image"> <img src="../../images/bag.webp" alt=""/></div>
             <div class="service__text"> 
@@ -291,96 +291,166 @@
       </div>
     </section>
     <section class="team"> 
-      <h2 class="team__title"> </h2>
+      <h2 class="team__title">Наша команда</h2>
+      <div class="swiper"> 
+        <div class="swiper-wrapper"> 
+          <div class="swiper-slide slide"> 
+            <div class="slide__image"> <img src="../../images/team2.webp"/></div>
+            <h5 class="slide__text">Яна Мельник, шефесса-духаресса</h5>
+          </div>
+          <div class="swiper-slide slide"> 
+            <div class="slide__image"> <img src="../../images/team1.webp"/></div>
+            <h5 class="slide__text">Богдан Мельник, душніла броньована</h5>
+          </div>
+          <div class="swiper-slide slide"> 
+            <div class="slide__image"> <img src="../../images/team1.webp"/></div>
+            <h5 class="slide__text">Стас Дєдов</h5>
+          </div>
+          <div class="swiper-slide slide"> 
+            <div class="slide__image"> <img src="../../images/team3.webp"/></div>
+            <h5 class="slide__text">Русланчик, просто Русланчик</h5>
+          </div>
+          <div class="swiper-slide slide"> 
+            <div class="slide__image"> <img src="../../images/team1.webp"/></div>
+            <h5 class="slide__text">О, а ще є Настя</h5>
+          </div>
+          <div class="swiper-slide slide"> 
+            <div class="slide__image"> <img src="../../images/team3.webp"/></div>
+            <h5 class="slide__text">Тут буде ще хтось</h5>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="price">
-      <h1 class="price__title">Вартість послуг</h1>
-      <div class="price__container-wrapper">
-        <div class="price__container flex">
-          <div class="price__img"><img src="../../images/man.webp" alt=""/></div>
+      <h2 class="price__title">Вартість послуг</h2>
+      <div class="price__container-wrapper container">
+        <div class="price__container lg-flex-up jc-between">
           <div class="price__column">
-            <div class="price__row flex"> 
-              <div class="row__article">Пост у соцмережах</div>
-              <div class="row__number">від 250₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Пост у соцмережах</p>
+              </div>
+              <div class="row__number">
+                <p>від 250₴</p>
+              </div>
             </div>
-            <div class="price__row flex">
-              <div class="row__article">Reels</div>
-              <div class="row__number">від 500₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Reels</p>
+              </div>
+              <div class="row__number">
+                <p>від 500₴</p>
+              </div>
             </div>
-            <div class="price__row flex"> 
-              <div class="row__article">Таргет кампанія</div>
-              <div class="row__number">від 1500₴</div>
+            <div class="price__row flex jc-between"> 
+              <div class="row__article">
+                <p>Таргет кампанія</p>
+              </div>
+              <div class="row__number">
+                <p>від 1500₴</p>
+              </div>
             </div>
-            <div class="price__row flex"> 
-              <div class="row__article">Рекламні креативи</div>
-              <div class="row__number">від 400₴</div>
+            <div class="price__row flex jc-between"> 
+              <div class="row__article">
+                <p>Рекламні креативи</p>
+              </div>
+              <div class="row__number">
+                <p>від 400₴</p>
+              </div>
             </div>
-            <div class="price__row flex">
-              <div class="row__article">Модерація сторінки</div>
-              <div class="row__number"> від 2000₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Модерація сторінки</p>
+              </div>
+              <div class="row__number">
+                <p> від 2000₴</p>
+              </div>
             </div>
-            <div class="price__row flex"> 
-              <div class="row__article">Контент-план</div>
-              <div class="row__number">від 1500₴</div>
+            <div class="price__row flex jc-between"> 
+              <div class="row__article">
+                <p>Контент-план</p>
+              </div>
+              <div class="row__number">
+                <p>від 1500₴</p>
+              </div>
             </div>
           </div>
-          <div class="price__img-container">   </div>
+          <div class="price__img"><img src="../../images/man.webp" alt=""/></div>
           <div class="price__column">
-            <div class="price__row flex">
-              <div class="row__article">Фотозйомка</div>
-              <div class="row__number">від 1500 ₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Фотозйомка</p>
+              </div>
+              <div class="row__number">
+                <p>від 1500 ₴</p>
+              </div>
             </div>
-            <div class="price__row flex">
-              <div class="row__article">Інфлюенс-маркетинг</div>
-              <div class="row__number">від 3000 ₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Інфлюенс-маркетинг</p>
+              </div>
+              <div class="row__number">
+                <p>від 3000 ₴</p>
+              </div>
             </div>
-            <div class="price__row flex">
-              <div class="row__article">Вебсайт</div>
-              <div class="row__number">від 10000 ₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Вебсайт</p>
+              </div>
+              <div class="row__number">
+                <p>від 10000 ₴</p>
+              </div>
             </div>
-            <div class="price__row flex">
-              <div class="row__article">Брендована продукція</div>
-              <div class="row__number">від 350 ₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Брендована продукція</p>
+              </div>
+              <div class="row__number">
+                <p>від 350 ₴</p>
+              </div>
             </div>
-            <div class="price__row flex">
-              <div class="row__article">Розробка логотипу</div>
-              <div class="row__number">від 4000 ₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Розробка логотипу</p>
+              </div>
+              <div class="row__number">
+                <p>від 4000 ₴</p>
+              </div>
             </div>
-            <div class="price__row flex">
-              <div class="row__article">Розробка брендбуку</div>
-              <div class="row__number">від 10000 ₴</div>
+            <div class="price__row flex jc-between">
+              <div class="row__article">
+                <p>Розробка брендбуку</p>
+              </div>
+              <div class="row__number">
+                <p>від 10000 ₴</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <h2 class="footer__title">Зв'язатись з нами</h2>
-      <div class="footer__container flex">
-        <form class="form" method="post">
-          <div class="form__data flex">
-            <p class="form__name">
-              <input class="name__input" type="text" placeholder=" Ім'я:"/>
-            </p>
-            <p class="form__phone">
-              <input class="phone__input" type="tel" placeholder="Номер телефону:"/>
-            </p>
+      <h2 class="footer__title container">звязатись з нами</h2>
+      <div class="md-flex-up footer-flex container">
+        <form class="footer__form form" action="">
+          <div class="md-flex-up form__inputs">
+            <input type="text" name="name" placeholder="ім'я"/>
+            <input type="tel" name="phone" placeholder="Номер телефону"/>
           </div>
-          <div class="form__message">       
-            <textarea class="message__input" name=""></textarea>
-          </div>
-          <div class="form__submit-wrapper flex">
-            <div class="form__btn btn flex">
-              <button class="btn__btn-submit" type="submit">Надіслати</button>
-            </div>
-            <div class="form__connect flex">
-              <input class="connect__input" type="checkbox"/>
-              <div class="connect__text">Зв'язатись зі мною у Telegram</div>
+          <textarea name="message" placeholder="Введіть Ваше повідомлення"> </textarea>
+          <div class="flex md-flex-column-reverse-up ai-center">
+            <button class="footer-btn" type="submit">Надіслати</button>
+            <div class="flex flex-reverse jc-end"> 
+              <label for="tg-chckbx">Зв’язатись зі мною у Telegram</label>
+              <input type="checkbox" name="" id="tg-chckbx"/>
             </div>
           </div>
         </form>
-        <div class="contacts">   
-          <div class="contacts__adress"> м. Чернівці, вул. Головна, 71</div>
+        <div class="footer__contacts">
+          <div class="contacts__adress"> 
+            <p>м. Чернівці, </p>
+            <p>вул. Головна, 71</p>
+          </div>
           <ul class="contacts__social"> 
             <li class="social__item"> <a class="social__link" href="#">+38 (097) 619 91 92</a></li>
             <li class="social__item"> <a class="social__link" href="#">INSTAGRAM</a></li>
@@ -393,6 +463,5 @@
       </div>
     </footer>
     <script src="js/main.min.js" defer="defer"></script>
-    <script src="js/swiper.js" defer="defer"></script>
   </body>
 </html>

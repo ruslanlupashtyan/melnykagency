@@ -26,7 +26,39 @@
 //-         .card__text-wrapper
 //-           .card__text Анастасія, квіточка, пише гранти,
 //-           .card__text вчить дітей української мови
-
+-
+  var team = [
+    {
+      text: 'Яна Мельник, шефесса-духаресса',
+      image: '../../images/team2.webp'
+    },
+    {
+      text: 'Богдан Мельник, душніла броньована',
+      image: '../../images/team1.webp'
+    },
+    {
+      text: 'Стас Дєдов',
+      image: '../../images/team1.webp'
+    },
+    {
+      text: 'Русланчик, просто Русланчик',
+      image: '../../images/team3.webp'
+    },
+    {
+      text: 'О, а ще є Настя',
+      image: '../../images/team1.webp'
+    },
+    {
+      text: 'Тут буде ще хтось',
+      image: '../../images/team3.webp'
+    },
+  ]
 section.team 
-  h2.team__title 
-    
+  h2.team__title Наша команда
+  .swiper 
+    .swiper-wrapper 
+      for slide in team 
+        .swiper-slide.slide 
+          .slide__image 
+            img(src= slide.image)
+          h5.slide__text= slide.text
