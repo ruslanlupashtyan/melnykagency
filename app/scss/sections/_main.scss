@@ -316,6 +316,15 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: calc(100% - 50px);
+  @include max-width(b-md) {
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 55%;
+  }
+  @include max-width(b-sm) {
+    background-size: 50%;
+  }
   &__title {
     max-width: 850px;
     margin-bottom: 40px;
@@ -327,6 +336,7 @@
     }
     @include max-width(b-lg) {
       max-width: 450px;
+      margin-bottom: 16px;
     }
     // @include max-width(b-lg) {
     //   max-width: 600px;
@@ -334,6 +344,9 @@
   }
   &__counter {
     margin-bottom: 50px;
+    @include max-width(b-md) {
+      margin-bottom: 310px;
+    }
   }
 }
 
@@ -370,6 +383,13 @@
   background-color: $orange-color;
   border-radius: 8px;
   box-shadow: 0px 0px 10px 12px #fefefc33 inset;
+  @include max-width(b-md) {
+    background-image: url(../../images/smart-object.webp);
+    height: 70px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
   &:last-child {
     margin-right: unset;
   }
@@ -381,17 +401,33 @@
     transform: translateY(-10px);
     width: fit-content;
     margin: 0 auto;
+    @include max-width(b-md) {
+      transform: unset;
+      margin: unset;
+      margin-right: 20px;
+      width: 70px;
+      img {
+        width: 100%;
+      }
+    }
   }
   &__text p {
     @include font(24, 28, 700);
     color: $white-color;
     text-align: center;
+    @include max-width(b-md) {
+      @include font(16, 20, 700);
+      text-align: left;
+    }
   }
   &:hover {
     .service__image,
     .service__text {
       transition: ease 250ms;
       transform: translateY(-30px);
+      @include max-width(b-md) {
+        transform: unset;
+      }
     }
   }
   @include max-width(b-md) {
