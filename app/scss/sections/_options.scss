@@ -1,17 +1,79 @@
 .options {
+  overflow: hidden;
+  margin-bottom: unset;
+  &__title {
+    margin-bottom: 36px;
+  }
+  &-wrapper {
+    margin-bottom: 90px;
+    transform: rotate(-2deg);
+    @include max-width(b-md) {
+      transform: none;
+      margin-bottom: 32px;
+    }
+  }
   .row {
     gap: 15px;
     margin-bottom: 15px;
     &:last-child {
       margin-bottom: unset;
     }
+    @include max-width(b-md) {
+      margin-bottom: unset;
+    }
   }
   .item {
     background-color: $orange-color;
     border-radius: 8px;
-    max-width: 480px;
+    max-width: var(--w);
+    height: 70px;
+    position: relative;
     &__text p {
       color: $white-color;
+    }
+    &__image {
+      display: block;
+      position: relative;
+      img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    &__text {
+      padding-left: 80px;
+      display: flex;
+      align-items: center;
+    }
+    @include max-width(b-md) {
+      max-width: 100%;
+      margin-bottom: 15px;
+      height: auto;
+      &__text {
+        padding: 16px 32px 16px 80px;
+      }
+    }
+    &:nth-child(odd)::before,
+    &:nth-child(even)::after {
+      content: "";
+      display: block;
+      width: 1000px;
+      height: 70px;
+      opacity: 0.2;
+      border-radius: 8px;
+      position: absolute;
+      background-color: $orange-color;
+      @include max-width(b-md) {
+        content: none;
+      }
+    }
+
+    &:nth-child(odd)::before {
+      left: -1010px;
+    }
+
+    &:nth-child(even)::after {
+      right: -1010px;
     }
   }
 }

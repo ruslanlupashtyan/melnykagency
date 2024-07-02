@@ -1,5 +1,5 @@
 section.reviews
-  .container.md-flex-up
+  .container.md-flex-up.jc-between
     .reviews__display 
       h2.reviews__title відгуки
       .reviews__content 
@@ -14,10 +14,36 @@ section.reviews
         .circles__container
           .circle.circle-small
       .choose__review 
-        .review__items
+        .review__items.md-flex-up.first 
           .item
             .item__text 
-              p 
+              p Григорій
             .item__stars 
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
+          .fill-circle
+        .review__items.md-flex-up.second
+          .item
+            .item__text 
+              p Антон
+            .item__stars 
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
+          .fill-circle
+        .review__items.md-flex-up.third
+          .item
+            .item__text 
+              p Марія
+            .item__stars 
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
+              include ../../images/star.svg
               include ../../images/star.svg
           .fill-circle

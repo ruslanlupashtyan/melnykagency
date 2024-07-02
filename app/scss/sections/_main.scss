@@ -311,6 +311,7 @@
 // }
 
 .hero {
+  margin-bottom: unset;
   padding: 40px 0;
   background-image: url(../../images/main-photo.webp);
   background-size: contain;
@@ -338,9 +339,6 @@
       max-width: 450px;
       margin-bottom: 16px;
     }
-    // @include max-width(b-lg) {
-    //   max-width: 600px;
-    // }
   }
   &__counter {
     margin-bottom: 50px;

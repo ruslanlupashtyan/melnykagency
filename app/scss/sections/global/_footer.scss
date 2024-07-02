@@ -179,6 +179,12 @@
   padding: 32px 0 50px;
   &-flex {
     gap: 120px;
+    @include max-width(b-xl) {
+      gap: 60px;
+    }
+    @include max-width(b-lg) {
+      gap: 25px;
+    }
   }
   &-btn {
     margin-right: 40px;
@@ -187,6 +193,10 @@
     background-color: $black-color;
     color: $white-color;
     border-radius: 20px 0 20px 0;
+    @include max-width(b-md) {
+      margin-right: unset;
+      margin-bottom: 24px;
+    }
   }
   &__title {
     text-align: left;
@@ -196,20 +206,30 @@
   &__form {
     max-width: 780px;
     width: 100%;
+    @include max-width(b-xl) {
+      max-width: 640px;
+    }
+    @include max-width(b-lg) {
+      max-width: 540px;
+    }
   }
   &__contacts {
     a,
     p {
       @include font(24, 28, 400);
+      @include max-width(b-lg) {
+        @include font(16, 20, 400);
+      }
     }
-    p:last-child {
+    p:last-child,
+    li:first-child {
       margin-bottom: 32px;
+      @include max-width(b-md) {
+        margin-bottom: 16px;
+      }
     }
     li {
       margin-bottom: 8px;
-    }
-    li:first-child {
-      margin-bottom: 32px;
     }
   }
   .form {
@@ -242,7 +262,11 @@
     }
     label {
       @include font(16, 25, 400);
+      font-family: "Namu";
       color: $white-color;
+      @include max-width(b-md) {
+        margin-bottom: 8px;
+      }
     }
   }
 }

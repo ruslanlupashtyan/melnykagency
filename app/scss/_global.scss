@@ -2,8 +2,10 @@ body {
   background-image: url("../images/background.webp");
   font-family: "Mazzard";
   font-size: 16px;
+  // padding-top: 80px;
 
-  background-size: contain;
+  background-size: cover;
+  background-attachment: fixed;
   &.hidden {
     overflow: hidden;
   }
@@ -11,4 +13,11 @@ body {
 
 h2 {
   margin-bottom: 32px;
+}
+
+section {
+  margin-bottom: 80px;
+  @include max-width(b-md) {
+    margin-bottom: 32px;
+  }
 }

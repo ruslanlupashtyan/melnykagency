@@ -7490,6 +7490,8 @@ let casesSwiper = new Swiper(".cases .swiper", {
   grabCursor: true,
   slidesPerView: 3.7,
   spaceBetween: 16,
+  // autoHeight: true,
+  // height: 200,
   breakpoints: {
     // when window width is >= 320px
     320: {

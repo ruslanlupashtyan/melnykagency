@@ -1,0 +1,44 @@
+.about {
+  &__item {
+    width: 50%;
+    &:first-child {
+      background-color: $orange-color;
+      padding: 40px 80px 50px 40px;
+      // width: 50%;
+      // background-image: url(../../images/hueta.webp);
+      // background-size: cover;
+      // position: relative;
+      // &::after {
+      //   content: "";
+      //   display: block;
+      //   width: 0px;
+      //   height: 0px;
+      //   border-style: solid;
+      //   border-width: 144px 0 144px 70px;
+      //   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fa5621;
+      //   transform: rotate(0deg);
+      //   position: absolute;
+      //   top: 0;
+      //   right: -69px;
+      // }
+    }
+    &:last-child {
+      background-color: $black-color;
+      // width: 50%;
+      padding: 40px 50px 50px 80px;
+    }
+    &:first-child,
+    &:last-child {
+      @include max-width(b-md) {
+        padding: 20px;
+      }
+    }
+    h4 {
+      color: $white-color;
+      margin-bottom: 20px;
+    }
+    @include max-width(b-md) {
+      width: 100%;
+    }
+  }
+}
