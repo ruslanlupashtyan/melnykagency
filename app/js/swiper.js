@@ -7514,10 +7514,22 @@ let casesSwiper = new Swiper(".cases .swiper", {
       spaceBetween: 12,
     },
     992: {
-      slidesPerView: 3.2,
+      slidesPerView: 2.8,
+    },
+    1140: {
+      slidesPerView: 3.1,
     },
     1200: {
       slidesPerView: 3.4,
+    },
+    1370: {
+      slidesPerView: 4.4,
+    },
+    1370: {
+      slidesPerView: 4.4,
+    },
+    1800: {
+      slidesPerView: 5.4,
     },
   },
   scrollbar: {
@@ -7555,6 +7567,12 @@ let teamSwiper = new Swiper(".team .swiper", {
     },
     1200: {
       slidesPerView: 3.4,
+    },
+    1660: {
+      slidesPerView: 4.4,
+    },
+    2070: {
+      slidesPerView: 5.4,
     },
   },
   scrollbar: {

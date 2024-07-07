@@ -1,0 +1,105 @@
+.grant {
+  margin-bottom: 80px;
+  @include max-width(b-md) {
+    margin-bottom: 32px;
+  }
+  &.container {
+    padding: 0 150px;
+    @include max-width(b-lg) {
+      padding: 0 100px;
+    }
+    @include max-width(b-md) {
+      padding: 0 15px;
+    }
+  }
+  &__items {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    max-width: 1045px;
+    width: 100%;
+    margin: 0 auto;
+    @include max-width(b-lg) {
+      gap: 10px;
+    }
+  }
+  .item {
+    padding: 20px;
+    background-color: $orange-color;
+    border-radius: 10px 0 10px 0;
+    @include max-width(b-md) {
+      margin-bottom: 12px;
+    }
+    &:first-child {
+      grid-area: 1 / 1 / 2 / 4;
+      position: relative;
+      &::before {
+        content: url(../../images/pen1.webp);
+        position: absolute;
+        top: -60px;
+        left: -130px;
+      }
+      @include max-width(b-xl) {
+        grid-area: 1 / 1 / 2 / 5;
+      }
+      @include max-width(b-md) {
+        &::before {
+          top: -120px;
+          left: 40px;
+          transform: rotate(55deg);
+        }
+      }
+    }
+    &:nth-child(2) {
+      grid-area: 1 / 4 / 2 / 9;
+      @include max-width(b-xl) {
+        grid-area: 1 / 5 / 2 / 9;
+      }
+    }
+    &:nth-child(3) {
+      grid-area: 1 / 9 / 2 / 13;
+      position: relative;
+      &::before {
+        content: url(../../images/pen2.webp);
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        @include max-width(b-md) {
+          top: unset;
+          bottom: -90px;
+          right: 0px;
+        }
+      }
+    }
+    &:nth-child(4) {
+      grid-area: 2 / 1 / 3 / 6;
+    }
+    &:last-child {
+      grid-area: 2 / 6 / 3 / 13;
+      padding-right: 40px;
+      position: relative;
+      background-color: $black-color;
+      &::before {
+        content: url(../../images/pen3.webp);
+        position: absolute;
+        bottom: -60px;
+        left: -210px;
+        @include max-width(b-md) {
+          bottom: -55px;
+          left: unset;
+          transform: rotate(10deg);
+        }
+      }
+    }
+    &__title p,
+    &__text p {
+      font-family: "Namu";
+    }
+    &__title p {
+      @include font(24, 28, 700);
+      margin-bottom: 10px;
+      @include max-width(b-lg) {
+        @include font(20, 24, 700);
+      }
+    }
+  }
+}

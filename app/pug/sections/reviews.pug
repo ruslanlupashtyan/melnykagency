@@ -3,7 +3,7 @@ section.reviews
     .reviews__display 
       h2.reviews__title відгуки
       .reviews__content 
-        
+        p.review-display Натисніть на ім'я користувача щоб побачити відгук
     .reviews__choose.choose
       .choose__circles
         .circles__container
@@ -14,7 +14,7 @@ section.reviews
         .circles__container
           .circle.circle-small
       .choose__review 
-        .review__items.md-flex-up.first 
+        .review__items.md-flex-up.first(data-review="1")
           .item
             .item__text 
               p Григорій
@@ -25,7 +25,7 @@ section.reviews
               include ../../images/star.svg
               include ../../images/star.svg
           .fill-circle
-        .review__items.md-flex-up.second
+        .review__items.md-flex-up.second(data-review="2")
           .item
             .item__text 
               p Антон
@@ -36,7 +36,7 @@ section.reviews
               include ../../images/star.svg
               include ../../images/star.svg
           .fill-circle
-        .review__items.md-flex-up.third
+        .review__items.md-flex-up.third(data-review="3")
           .item
             .item__text 
               p Марія

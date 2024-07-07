@@ -3,13 +3,21 @@
   &__content {
     height: 100%;
     width: 100%;
+    // width: vw-tab(200px);
+    // width: vw-mob(200px);
+    // width: vw-tab-l(200px);
     background-position: top;
     background-image: url(../../images/laptop.webp);
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 20px 65px;
+    text-align: center;
     @include max-width(b-md) {
       height: 225px;
       background-position: center;
+    }
+    p {
+      color: $black-color;
     }
   }
   &__display {
@@ -201,6 +209,8 @@
         width: fit-content;
         position: relative;
         margin-right: 15px;
+        cursor: pointer;
+        user-select: none;
         &::after {
           content: "";
           right: -5px;

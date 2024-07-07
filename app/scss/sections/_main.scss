@@ -432,3 +432,74 @@
     max-width: unset;
   }
 }
+
+.article-hero {
+  background-color: $black-color;
+  background-image: url(../../images/smart-object.webp);
+  background-size: cover;
+  background-repeat: repeat;
+  gap: 80px;
+  padding: 50px 0;
+  &__text {
+    max-width: 900px;
+    width: 100%;
+  }
+  .text {
+    &__tag p {
+      @include font(24, 28, 700);
+      background-color: $orange-color;
+      padding: 12px 16px;
+      width: fit-content;
+      border-radius: 10px 0 10px 0;
+    }
+    h1 {
+      color: $white-color;
+      @include font(48, 58, 700);
+      margin-bottom: 16px;
+    }
+  }
+  .article__subtitle p {
+    margin-bottom: 40px;
+    color: $white-color;
+    @include font(24, 28, 700);
+  }
+  .author {
+    &__image {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: $orange-color;
+      background-image: url(../../images/smart-object.webp);
+      overflow: hidden;
+      margin-right: 12px;
+      img {
+        width: 100%;
+      }
+    }
+    &__label p {
+      margin-bottom: 12px;
+      @include font(14, 16, 700);
+    }
+    &__name {
+      border-left: 1px solid $white-color;
+      padding: 10px 12px;
+      .name {
+        margin-bottom: 14px;
+      }
+    }
+  }
+  .date p {
+    padding: 0 12px;
+    border-right: 1px solid $white-color;
+    &:last-child {
+      margin: unset;
+      border: unset;
+    }
+  }
+  &__image {
+    max-width: 400px;
+    img {
+      width: 100%;
+    }
+  }
+}

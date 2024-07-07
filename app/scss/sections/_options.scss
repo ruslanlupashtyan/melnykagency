@@ -57,7 +57,7 @@
     &:nth-child(even)::after {
       content: "";
       display: block;
-      width: 1000px;
+      width: 1500px;
       height: 70px;
       opacity: 0.2;
       border-radius: 8px;
@@ -69,11 +69,11 @@
     }
 
     &:nth-child(odd)::before {
-      left: -1010px;
+      left: -1510px;
     }
 
     &:nth-child(even)::after {
-      right: -1010px;
+      right: -1510px;
     }
   }
 }
