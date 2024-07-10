@@ -4,4 +4,8 @@
   border-radius: 20px 0px 20px 0px;
   padding: 14px 24px;
   font-family: "Mazzard";
+  &.disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+  }
 }

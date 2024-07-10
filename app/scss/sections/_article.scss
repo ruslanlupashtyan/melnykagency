@@ -1,0 +1,91 @@
+.article {
+  gap: 76px;
+  margin-bottom: 80px;
+  p {
+    color: $black-color;
+  }
+  .content {
+    @include max-width(b-md) {
+      margin-bottom: 50px;
+    }
+    &__annotation {
+      margin-bottom: 64px;
+      @include max-width(b-md) {
+        margin-bottom: 16px;
+      }
+    }
+    &__description {
+      margin-bottom: 16px;
+    }
+    &__title p {
+      color: $white-color;
+      background-color: $orange-color;
+      border-radius: 12px 0 12px 0;
+      padding: 12px 20px;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      width: fit-content;
+      @include max-width(b-md) {
+        margin-bottom: 16px;
+      }
+    }
+    .thesis {
+      margin-bottom: 36px;
+      &__title p {
+        @include font(32, 38, 700);
+        margin-bottom: 16px;
+        @include max-width(b-md) {
+          @include font(22, 24, 700);
+        }
+      }
+      &__text p {
+        margin-bottom: 12px;
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+    &__sign p {
+      text-align: center;
+    }
+  }
+  .tags {
+    &__title p,
+    &__hashtag p {
+      text-transform: uppercase;
+      @include font(32, 38, 700);
+      @include max-width(b-md) {
+        @include font(22, 24, 700);
+      }
+    }
+    &__hashtag p {
+      color: $orange-color;
+      margin-bottom: 24px;
+    }
+  }
+  .acide {
+    max-width: 400px;
+  }
+  .adv {
+    border-radius: 16px 0 16px 0;
+    overflow: hidden;
+    &__image {
+      width: 100%;
+      flex-shrink: 0;
+      img {
+        width: 100%;
+      }
+    }
+    &__description {
+      padding: 15px 30px;
+      background-color: $white-color;
+      p {
+        margin-bottom: 12px;
+      }
+    }
+    .btn {
+      display: block;
+      width: fit-content;
+    }
+  }
+}

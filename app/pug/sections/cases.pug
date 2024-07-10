@@ -52,11 +52,13 @@
  var cases = [
   {
     title: 'melnyk.agency - агенція SMM та грантрайтингових послуг',
-    image: '../../images/smm.webp'
+    image: '../../images/smm.webp',
+    link: 'melnyk-agency-agenciia-smm-ta-grantovykh-poslug.html',
   },
   {
     title: 'SMM кейси: як комунікувати з аудиторією? (на прикладі громадських, комунальних, бізнес-кейсів)',
-    image: '../../images'
+    image: '../../images/communication.webp',
+    link: 'iak-komunikuvaty-z-audytoriieiu.html',
   },
   {
     title: 'SMM кейси: рекламний бюджет, який принесе результат',
@@ -66,22 +68,22 @@
     title: 'SMM кейси: просування для компаній перевезення країнами Європи',
     image: '../../images/seo.webp'
   },
-  {
-    title: 'SMM кейси: студія яскравих емоцій Фенікс',
-    image: '../../images'
-  },
-  {
-    title: 'Грантові кейси: вантажні перевезення EmBus',
-    image: '../../images'
-  },
+  //- {
+  //-   title: 'SMM кейси: студія яскравих емоцій Фенікс',
+  //-   image: '../../images'
+  //- },
+  //- {
+  //-   title: 'Грантові кейси: вантажні перевезення EmBus',
+  //-   image: '../../images'
+  //- },
   {
     title: 'Грантові кейси: центр раннього розвитку “Мудрик”',
     image: '../../images/mudrik.webp'
   },
-  {
-    title: 'Грантові кейси: магазини одягу для дітей та підлітків',
-    image: '../../images'
-  },
+  //- {
+  //-   title: 'Грантові кейси: магазини одягу для дітей та підлітків',
+  //-   image: '../../images'
+  //- },
  ]
 
 section.cases 
@@ -93,6 +95,8 @@ section.cases
           .slide__image 
             img(src= item.image, alt="")
           .slide__text.flex.flex-column-up.jc-between
-            p= item.title 
-            button.slide__button.btn Детальніше
-        
+            p= item.title
+            if (item.link)
+              a(href= item.link target="_blank").slide__button.btn Детальніше
+            else 
+              a(href= item.link target="_blank" disabled).slide__button.btn.disabled Детальніше

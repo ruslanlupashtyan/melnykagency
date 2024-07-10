@@ -1,0 +1,80 @@
+- var title = 'TITLE'
+- var gTag = 'G-'
+
+doctype html    
+html(lang="uk")
+    include pug/sections/global/head.pug
+    body
+      include pug/sections/global/header.pug
+      section.article-hero
+        .container.flex
+          .article-hero__text.text
+            .text__tag 
+              p #Кейси
+            h1.article__title melnyk.agency - агенція SMM та грантрайтингових послуг
+            //- .article__subtitle
+            //-   p (на прикладі громадських, комунальних, бізнес-кейсів)
+            .article-hero__footer 
+              .flex 
+                .author
+                  .author__label 
+                    p Авторка статті
+                  .flex
+                    .author__image
+                      img(src="./././images/yana.webp", alt="")
+                    .author__name
+                      .name 
+                        p Яна Мельник
+                      .position 
+                        p Засновниця Melnyk Agency
+              .date.flex.jc-center
+                p 09 липня 2024
+                p 7 хв читання
+                p 
+                  span 
+                    include ./././images/view.svg
+                  span 1488
+          .article-hero__image 
+            img(src="././images/smm.webp", alt="")
+          
+      section.article.container.md-flex-up
+        .article__content.content 
+          .content__annotation 
+            p Реалізація проєктів завжди починається із ідеї: ідея, яка надихатиме вас, яка обʼєднає однодумців та створить справжню команду, яка буде мотивувати прокидатися кожного ранку, щоб втілювати задумане! Ідея melnyk.agency працювати на результат, щоб досягати нових висот для наших клієнтів! 
+          .content__title 
+            p чим ми будемо корисні?
+          ul.content__thesis
+            li.thesis 
+              .thesis__title
+                p Втілення медіа-стратегій
+              .thesis__text
+                p Ми пропонуємо індивідуальні рішення для кожного клієнта, що враховують усі особливості вашого бізнесу, сфери діяльності та ринку. Наші стратегії допоможуть максимально ефективно використовувати медіа-ресурси, втілювати рекламні кампанії та створювати контент для цільової аудиторії.
+            li.thesis 
+              .thesis__title
+                p Кейси залучення грантових коштів
+              .thesis__text
+                p Знаємо, як важливо залучити додаткові кошти для реалізації великих ідей. Наші кейси доводять, що можливо все. Від ідеї до успішного отримання гранту — ми допоможемо на кожному етапі!
+            li.thesis 
+              .thesis__title
+                p Експертний контент
+              .thesis__text
+                p Будемо ділитися найновішими знаннями та інсайтами, кейсами та факапами у світі медіа та маркетингу. Наша команда готує для вас статті, огляди та аналітичні матеріали, які допоможуть бути на крок попереду конкурентів.
+            li.thesis 
+              .thesis__text
+                p Реалізація проєктів завжди починається із ідеї: ідея, яка надихатиме вас, яка обʼєднає однодумців та створить справжню команду, яка буде мотивувати прокидатися кожного ранку, щоб втілювати задумане! Ідея melnyk.agency працювати на результат, щоб досягати нових висот для наших клієнтів! 
+          .content__sign
+            p Готові до нових викликів і співпраці з новими проєктами!
+            p Команда melnyk.agency
+        .article__acide.acide 
+          .acide__tags.tags
+            .tags__title 
+              p статті по хештегом
+            .tags__hashtag
+              p #кейси
+          .acide__adv.adv 
+            .adv__image
+              img(src="././images/communication.webp", alt="")
+            .adv__description   
+              p SMM кейси: як комунікувати з аудиторією? (на прикладі громадських, комунальних, бізнес-кейсів)
+              a.btn Детальніше
+      include pug/sections/global/footer.pug
