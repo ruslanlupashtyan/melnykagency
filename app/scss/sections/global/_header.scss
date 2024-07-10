@@ -113,6 +113,7 @@
   li {
     a,
     button {
+      @include font(20, 24, 400);
       position: relative;
       color: $white-color;
       width: 100%;

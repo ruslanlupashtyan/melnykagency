@@ -79,11 +79,18 @@
   .slide {
     border-radius: 16px 0 16px 0;
     overflow: hidden;
+    width: 370px;
+    @include max-width(b-md) {
+      width: 300px;
+    }
     &__image {
       background-color: $orange-color;
 
       // NEED CLEAR IN RELISE
       height: 250px;
+      @include max-width(b-md) {
+        height: 189px;
+      }
       img {
         object-fit: cover;
         width: 100%;
@@ -93,7 +100,7 @@
     }
     &__text {
       padding: 15px 30px 30px;
-      height: 180px;
+      height: 190px;
       background-color: $white-color;
       p {
         margin-bottom: 12px;

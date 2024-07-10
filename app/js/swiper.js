@@ -7488,50 +7488,50 @@ var Swiper = (function () {
 
 let casesSwiper = new Swiper(".cases .swiper", {
   grabCursor: true,
-  slidesPerView: 3.7,
+  slidesPerView: "auto",
   spaceBetween: 16,
   // autoHeight: true,
   // height: 200,
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1.15,
-      spaceBetween: 12,
-    },
-    375: {
-      slidesPerView: 1.25,
-    },
-    576: {
-      slidesPerView: 1.5,
-      spaceBetween: 12,
-    },
-    620: {
-      slidesPerView: 1.8,
-      spaceBetween: 12,
-    },
-    750: {
-      slidesPerView: 2.4,
-      spaceBetween: 12,
-    },
-    992: {
-      slidesPerView: 2.8,
-    },
-    1140: {
-      slidesPerView: 3.1,
-    },
-    1200: {
-      slidesPerView: 3.4,
-    },
-    1370: {
-      slidesPerView: 4.4,
-    },
-    1370: {
-      slidesPerView: 4.4,
-    },
-    1800: {
-      slidesPerView: 5.4,
-    },
-  },
+  // breakpoints: {
+  //   // when window width is >= 320px
+  //   320: {
+  //     slidesPerView: 1.15,
+  //     spaceBetween: 12,
+  //   },
+  //   375: {
+  //     slidesPerView: 1.25,
+  //   },
+  //   576: {
+  //     slidesPerView: 1.5,
+  //     spaceBetween: 12,
+  //   },
+  //   620: {
+  //     slidesPerView: 1.8,
+  //     spaceBetween: 12,
+  //   },
+  //   750: {
+  //     slidesPerView: 2.4,
+  //     spaceBetween: 12,
+  //   },
+  //   992: {
+  //     slidesPerView: 2.8,
+  //   },
+  //   1140: {
+  //     slidesPerView: 3.1,
+  //   },
+  //   1200: {
+  //     slidesPerView: 3.4,
+  //   },
+  //   1370: {
+  //     slidesPerView: 4.4,
+  //   },
+  //   1370: {
+  //     slidesPerView: 4.4,
+  //   },
+  //   1800: {
+  //     slidesPerView: 5.4,
+  //   },
+  // },
   scrollbar: {
     el: ".swiper-scrollbar",
   },
