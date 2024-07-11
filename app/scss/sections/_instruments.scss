@@ -3,6 +3,8 @@
   padding: 32px 0 60px;
   background-color: $orange-color;
   background-image: url(../../images/smart-object.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   &__title {
     color: $white-color;
     margin-bottom: 32px;

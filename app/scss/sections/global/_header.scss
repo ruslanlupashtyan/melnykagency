@@ -184,6 +184,7 @@
 .hamburger.active .line:nth-child(2),
 .hamburger.active .line:nth-child(3) {
   transition-delay: 0.2s;
+  background-color: $white-color;
 }
 
 .hamburger.active .line:nth-child(2) {
