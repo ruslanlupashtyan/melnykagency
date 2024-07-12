@@ -2,19 +2,22 @@
   var nav = [
     {
       title: 'Головна',
-      link: ''
+      link: '/'
     },
     {
       title: 'Послуги',
-      link: ''
+      link: '',
+      class: 'drop'
     },
     {
       title: 'Команда',
-      link: ''
+      link: 'javascript:;',
+      data_animate: 'team'
     },
     {
       title: 'Відгуки',
-      link: ''
+      link: 'javascript:;',
+      data_animate: 'reviews'
     }
   ]
 
@@ -24,8 +27,14 @@ header.header
       include ../../../images/logo.svg
     ul.header__menu.nav.flex.jc-between
       for link in nav 
-        li.nav__item
-          a(href=link.link)= link.title 
+        if link.class == "drop"
+          li.nav__item(class= link.class)= link.title
+            .drop-item
+              a(href="/business.html") Просування бізнесу
+              a(href="/grants.html") Формування грантових заявок
+        else 
+          li.nav__item(data-animate= link.data_animate)
+            a(href= link.link)= link.title 
     .flex.ai-center
       .btn Безкоштовна консультація
       .toggle

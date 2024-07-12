@@ -53,15 +53,20 @@ footer.footer
   h2.footer__title.container звязатись з нами
   .md-flex-up.footer-flex.container
     form.footer__form.form(action="")
-      .md-flex-up.form__inputs
-        input(type="text", name="name" placeholder="ім'я")
-        input(type="tel", name="phone" placeholder="Номер телефону")
+      .md-flex-up.form__inputs.jc-between
+        .input__item
+          input(type="text", name="name" placeholder="ім'я")
+          p Введіть ваше ім'я!
+        .input__item
+          input(type="tel", name="phone")
+          p Введіть ваш номер!
       textarea(name="message" placeholder="Введіть Ваше повідомлення")
       .flex.md-flex-column-reverse-up.ai-center
         button.footer-btn(type="submit") Надіслати
-        .flex.flex-reverse.jc-end 
+        .flex.flex-reverse.jc-end.tg-chckbx
           label(for="tg-chckbx") Зв’язатись зі мною у Telegram
           input(type="checkbox", name="" id="tg-chckbx")
+      p.success Дякуємо, наш менеджер зв'яжеться з Вами!
 
     .footer__contacts
       .contacts__adress 

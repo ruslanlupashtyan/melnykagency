@@ -89,6 +89,27 @@
     @include max-width(b-md) {
       margin-right: 20px;
     }
+    position: relative;
+    .drop-item {
+      display: none;
+      background-color: $white-color;
+      position: absolute;
+      width: 250px;
+      padding: 15px 25px;
+      a {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    &.drop {
+      line-height: 24px;
+      cursor: pointer;
+    }
+    &.drop:hover {
+      .drop-item {
+        display: block;
+      }
+    }
   }
   @include max-width(b-md) {
     display: none;

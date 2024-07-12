@@ -16,7 +16,11 @@
     background-size: contain;
     padding: 20px 65px 80px;
     text-align: center;
+    @include max-width(b-lg) {
+      padding: 20px 100px 80px;
+    }
     @include max-width(b-md) {
+      padding: 20px 80px 80px;
       height: 225px;
       background-position: center;
     }

@@ -30,7 +30,12 @@ example:
   font-weight: 400;
 }
 @font-face {
-  font-family: "NAMU";
-  src: url("../fonts/NAMU-Pro.ttf") format("TrueType");
+  font-family: "NAMU-1850";
+  src: url("../fonts/NAMU-1850.TTF") format("TrueType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NAMU-1960";
+  src: url("../fonts/NAMU-1960.TTF") format("TrueType");
   font-weight: 400;
 }

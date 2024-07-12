@@ -5,6 +5,12 @@
   background-image: url(../../images/smart-object.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  &__items {
+    gap: 250px;
+    @include max-width(b-lg) {
+      gap: 100px;
+    }
+  }
   &__title {
     color: $white-color;
     margin-bottom: 32px;
@@ -56,11 +62,17 @@
         margin-bottom: unset;
       }
     }
+    @include max-width(b-lg) {
+      max-width: 320px;
+    }
   }
   .img {
     position: absolute;
     left: calc(50% - 189px);
     bottom: 0;
+    @include max-width(b-lg) {
+      left: calc(50% - 110px);
+    }
     @include max-width(b-md) {
       display: none;
     }
@@ -74,10 +86,22 @@
       );
       width: 420px;
       height: 420px;
+      @include max-width(b-lg) {
+        width: 200px;
+        height: 200px;
+      }
     }
     .image {
       position: relative;
       z-index: 2;
+    }
+    @include max-width(b-lg) {
+      .image {
+        width: 200px;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }

@@ -8,8 +8,8 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta property="og:image" content=""/>
-    <link rel="icon" href="" type="image/x-icon"/>
-    <title>TITLE</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <title>Melnyk Agency | агенція SMM та грантрайтингових послуг</title>
     <link rel="stylesheet" href="css/style.min.css"/>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
     <script>
@@ -47,10 +47,12 @@
 
         </div>
         <ul class="header__menu nav flex jc-between">
-          <li class="nav__item"><a href="">Головна</a></li>
-          <li class="nav__item"><a href="">Послуги</a></li>
-          <li class="nav__item"><a href="">Команда</a></li>
-          <li class="nav__item"><a href="">Відгуки</a></li>
+          <li class="nav__item"><a href="/">Головна</a></li>
+          <li class="nav__item drop">Послуги
+            <div class="drop-item"><a href="/business.html">Просування бізнесу</a><a href="/grants.html">Формування грантових заявок</a></div>
+          </li>
+          <li class="nav__item" data-animate="team"><a href="javascript:;">Команда</a></li>
+          <li class="nav__item" data-animate="reviews"><a href="javascript:;">Відгуки</a></li>
         </ul>
         <div class="flex ai-center">
           <div class="btn">Безкоштовна консультація</div>
@@ -197,18 +199,25 @@
       <h2 class="footer__title container">звязатись з нами</h2>
       <div class="md-flex-up footer-flex container">
         <form class="footer__form form" action="">
-          <div class="md-flex-up form__inputs">
-            <input type="text" name="name" placeholder="ім'я"/>
-            <input type="tel" name="phone" placeholder="Номер телефону"/>
+          <div class="md-flex-up form__inputs jc-between">
+            <div class="input__item">
+              <input type="text" name="name" placeholder="ім'я"/>
+              <p>Введіть ваше ім'я!</p>
+            </div>
+            <div class="input__item">
+              <input type="tel" name="phone"/>
+              <p>Введіть ваш номер!</p>
+            </div>
           </div>
           <textarea name="message" placeholder="Введіть Ваше повідомлення"></textarea>
           <div class="flex md-flex-column-reverse-up ai-center">
             <button class="footer-btn" type="submit">Надіслати</button>
-            <div class="flex flex-reverse jc-end"> 
+            <div class="flex flex-reverse jc-end tg-chckbx">
               <label for="tg-chckbx">Зв’язатись зі мною у Telegram</label>
               <input type="checkbox" name="" id="tg-chckbx"/>
             </div>
           </div>
+          <p class="success">Дякуємо, наш менеджер зв'яжеться з Вами!</p>
         </form>
         <div class="footer__contacts">
           <div class="contacts__adress"> 

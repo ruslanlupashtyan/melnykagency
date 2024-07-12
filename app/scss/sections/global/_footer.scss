@@ -190,12 +190,17 @@
     margin-right: 40px;
     padding: 20px 110px;
     display: block;
+    margin-bottom: 12px;
     background-color: $black-color;
     color: $white-color;
     border-radius: 20px 0 20px 0;
     @include max-width(b-md) {
       margin-right: unset;
       margin-bottom: 24px;
+    }
+    &.success {
+      background-color: #91908f;
+      color: #000;
     }
   }
   &__title {
@@ -239,7 +244,7 @@
     input:not(#tg-chckbx),
     textarea {
       width: 100%;
-      margin-bottom: 16px;
+      margin-bottom: 4px;
       border: none;
       padding: 20px 40px;
     }
@@ -262,11 +267,32 @@
     }
     label {
       @include font(16, 25, 400);
-      font-family: "Namu";
+      font-family: "NAMU-1960";
       color: $white-color;
       @include max-width(b-md) {
         margin-bottom: 8px;
       }
+    }
+  }
+  .input__item {
+    margin-bottom: 16px;
+    p {
+      display: none;
+      &.err {
+        display: block;
+      }
+    }
+  }
+  input[name="name"],
+  input[name="phone"] {
+    &.err {
+      border: 4px solid red !important;
+    }
+  }
+  .success {
+    display: none;
+    &.err {
+      display: block;
     }
   }
 }
